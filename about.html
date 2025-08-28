@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - RAS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header,
+    footer {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 0;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .profile-image img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      margin-top: 1rem;
+    }
+
+    .skill {
+      display: inline-block;
+      background: #333;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .skill:hover {
+      background: #555;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>About Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="about-section">
+      <div class="about-content">
+        <div class="profile-image">
+          <img src="profile.jpg" alt="RAS">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hello! I'm <strong>RAS</strong>, a passionate front-end developer with over 0 years of experience. I want to
+            create responsive and user-friendly websites. I want to specialize in <strong>HTML, CSS, JavaScript, and
+              React</strong>.</p>
+          <p>My approach to web development combines technical expertise with creative design thinking. I believe that
+            great websites should not only look beautiful but also provide seamless user experiences across all
+            devices.</p>
+          <p>When I'm not coding, you can find me hiking in the mountains, reading science fiction, playing an
+            instrument, or experimenting with photography.</p>
+
+          <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Responsive Design</span>
+            <span class="skill">UI/UX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 RAS. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
