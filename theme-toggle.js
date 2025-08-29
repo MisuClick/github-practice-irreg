@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateTheme() {
     if (body.classList.contains("dark-mode")) {
-      toggleBtn.textContent = "☀️ Light Mode";
+      toggleBtn.textContent = "☀️";
     } else {
-      toggleBtn.textContent = "🌙 Dark Mode";
+      toggleBtn.textContent = "🌙";
     }
   }
 
