@@ -56,6 +56,33 @@
         main {
             margin: 2rem 0;
         }
+                /* Dark Mode Styling */
+        body.dark-mode {
+        background-color: #222;
+        color: #f1f1f1;
+        }
+
+        body.dark-mode header,
+        body.dark-mode footer {
+        background: #111;
+        color: #eee;
+        }
+
+        body.dark-mode a {
+        color: #ffdd57;
+        }
+        #theme-toggle {
+        background: none;    /* no background */
+        border: none;        /* no border */
+        font-size: 1.4rem;   /* make the icon bigger */
+        cursor: pointer;     /* pointer on hover */
+        margin-left: 1rem;   /* spacing */
+        }
+
+        #theme-toggle:hover {
+        opacity: 0.7;        /* slight fade effect on hover */
+        }
+
     </style>
 </head>
 
@@ -67,6 +94,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button id="theme-toggle">🌙 Dark Mode</button>
     </header>
 
     <main>
@@ -77,6 +105,7 @@
     <footer>
         <p>&copy; 2025 My Website</p>
     </footer>
+    <script src="theme-toggle.js"></script>
 </body>
 
 </html>

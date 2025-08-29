@@ -99,6 +99,32 @@
     footer p {
       margin: 0;
     }
+        /* Dark Mode Styling */
+    body.dark-mode {
+      background-color: #222;
+      color: #f1f1f1;
+    }
+
+    body.dark-mode header,
+    body.dark-mode footer {
+      background: #111;
+      color: #eee;
+    }
+
+    body.dark-mode a {
+      color: #ffdd57;
+    }
+      #theme-toggle {
+      background: none;    /* no background */
+        border: none;        /* no border */
+        font-size: 1.4rem;   /* make the icon bigger */
+        cursor: pointer;     /* pointer on hover */
+        margin-left: 1rem;   /* spacing */
+        }
+
+        #theme-toggle:hover {
+        opacity: 0.7;        /* slight fade effect on hover */
+        }
   </style>
 </head>
 
@@ -110,6 +136,7 @@
       <a href="about.html">About Me</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button id="theme-toggle">🌙 Dark Mode</button>
   </header>
 
   <main class="container">
@@ -147,6 +174,7 @@
       <p>&copy; 2025 RAS. All rights reserved.</p>
     </div>
   </footer>
+  <script src="theme-toggle.js"></script>
 </body>
 
 </html>
