@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header,
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .08);
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            padding: .8rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: #fff;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .row {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width:640px) {
+            .row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        button {
+            padding: .9rem 1.1rem;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            background: #333;
+            color: #fff;
+        }
+
+        button:hover {
+            opacity: .9;
+        }
+
+        .hint {
+            font-size: .9rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Get in touch</h2>
+        <p class="hint">Fill out the form and I’ll get back to you as soon as I can.</p>
+
+        <!-- Replace action with your backend endpoint when ready -->
+        <form action="#" method="post" novalidate>
+            <div class="row">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required />
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+
+</html>
