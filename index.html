@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starter Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -83,6 +84,25 @@
         opacity: 0.7;        /* slight fade effect on hover */
         }
 
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* This centers the icons horizontally */
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.8rem; /* Make icons larger */
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffdd57; /* Highlight color on hover */
+        }
+
     </style>
 </head>
 
@@ -103,6 +123,38 @@
     </main>
 
     <footer>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.facebook.com/JustinBieber" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/lilbieber/?hl=en" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/justinbieber?" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+        </ul>
         <p>&copy; 2025 My Website</p>
     </footer>
     <script src="theme-toggle.js"></script>
